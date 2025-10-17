@@ -10,5 +10,10 @@ public class CalcTest {
     void testAddition() {
         assertEquals(4, c.add(2,2));
     }
-
+@Test
+public void testSubtraction() {
+    Calc c = new Calc();
+    assertEquals(2, c.subtract(4, 2));  // 预期结果为2，若subtract方法逻辑错误则测试失败
 }
+}
+
